@@ -10,11 +10,18 @@ Date: 24.03.2024
 
 import math
 
+def decorator(func):
+    def wrapper():    
+        print("Введите целые числа для их суммирования (для выхода из программы введите число > 100)")
+        
+        func()
+    
+    return wrapper
+
+@decorator
 def Task2():
     """Function for summing integers"""
     total = 0
-
-    print("Введите целые числа для их суммирования (для выхода из программы введите число > 100)")
 
     while True:
         num = int(input())
@@ -23,7 +30,6 @@ def Task2():
             break
         else:
             total += num
-    
+        
     print("Сумма введённых чисел - {}".format(total))
-
         
