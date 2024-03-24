@@ -17,7 +17,6 @@ while True:
               4: Task4,
               5: Task5}
 
-
     if choice in switch:
         switch[choice]()
 

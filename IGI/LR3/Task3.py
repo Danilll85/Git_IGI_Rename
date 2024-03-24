@@ -16,7 +16,7 @@ def Task3():
     totalUpperCaseWords = 0
 
     for i in range(len(str1)):
-        if str1[i] == str1[i].lower() and (i == 0 or str1[i - 1] == " ") and checkNumber(str1[i]) == False and checkConsonant(str1[i]) == True: # Consonant == согласный  #isdigit() - ?
+        if str1[i] == str1[i].lower() and (i == 0 or str1[i - 1] == " ") and checkNumber(str1[i]) == False and checkConsonant(str1[i]) == True: # Consonant == согласный  
             totalUpperCaseWords += 1
         else:
             continue
@@ -25,7 +25,7 @@ def Task3():
 
 def checkConsonant(str1: str):
     """Function to check for consonant"""
-    allGlasnyeBukvy = ["а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я"]    
+    allGlasnyeBukvy = ["а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я", "a", "e", "i", "o", "u", "y"]    
 
     isConsonant = True
 

@@ -33,3 +33,4 @@ def Task2():
         
     print("Сумма введённых чисел - {}".format(total))
         
+    
