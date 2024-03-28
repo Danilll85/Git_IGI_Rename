@@ -11,16 +11,17 @@ Date: 24.03.2024
 
 
 import math
+import inputCheck as ic
 from prettytable import PrettyTable
 
 def Task1():
     """Function for input values"""
 
     print('Введите x: ')
-    x = int(input())
+    x = ic.floatCheck()
 
     print('Введите желаемую точность eps: ')
-    eps = float(input())
+    eps = ic.floatCheck()
 
     createTable(F(x,eps))
 

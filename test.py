@@ -1,10 +1,7 @@
-arr = "Helloi00"
+import IGI.LR3.inputCheck as ic
 
-print(arr[1:5:2])
+num = ic.floatCheck()
+print(num)
 
-typle = ("Hello", 34)
-
-print(typle)
-
-ls = []
+d = {}
 

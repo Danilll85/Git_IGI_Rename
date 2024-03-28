@@ -9,6 +9,7 @@ Date: 24.03.2024
 """
 
 import math
+import inputCheck as ic
 
 def decorator(func):
     def wrapper():    
@@ -24,7 +25,7 @@ def Task2():
     total = 0
 
     while True:
-        num = int(input())
+        num = ic.intCheck()
 
         if num > 100:
             break

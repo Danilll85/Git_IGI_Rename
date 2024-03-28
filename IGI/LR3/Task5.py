@@ -6,9 +6,28 @@ Dev: Kuroedov Danila
 Date: 24.03.2024
 
 """
+import inputCheck as ic
+from gen import gen
 
 def Task5():
-    arr = list(map(float, input("Введите элементы списка через пробел: ").split()))
+    arr = []
+    while True:
+        print('Введите 1 для самостоятельного ввода и 2 для генерации')
+        choice = ic.intCheck()
+        if choice == 1:
+            arr = list(map(float, input("Введите элементы списка через пробел: ").split()))
+            break
+        elif choice == 2:
+            print('Введите длину желаемого массива')
+            arrlen = ic.intCheck()
+            #arr = [i ** 2 / 100 for i in range(0, 10)]
+            arr = list(gen(arrlen))
+            break
+        else:
+            print('Попробуйте ещё раз')
+            continue
+
+    print(*arr)
 
     zeros = countZeros(arr)
 

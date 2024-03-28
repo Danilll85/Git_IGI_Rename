@@ -40,7 +40,8 @@ def checkConsonant(str1: str):
 def checkNumber(str1: str):
     """Function to check for number"""
 
-    nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    # nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    nums = [chr(48 + i) for i in range(0, 11)]
 
     isNumber = False
 
